@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artistry — Gallery</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- AOS (Animate On Scroll) -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Artistry</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section class="container my-5">
+  <div class="row g-4 align-items-start">
+    <div class="col-lg-6" data-aos="zoom-in">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Great_Wave_off_Kanagawa2.jpg" alt="The Great Wave off Kanagawa" class="img-fluid rounded-4 shadow-sm">
+    </div>
+    <div class="col-lg-6" data-aos="fade-left">
+      <h2 class="fw-bold">The Great Wave off Kanagawa</h2>
+      <p class="mb-1"><span class="badge bg-secondary">Hokusai</span></p>
+      <p class="text-muted">Year: 1831</p>
+      <p>The iconic ukiyo-e woodblock print from the series 'Thirty-Six Views of Mount Fuji', renowned for its dynamic composition.</p>
+      <a href="gallery.html" class="btn btn-outline-primary rounded-pill">← Back to Gallery</a>
+    </div>
+  </div>
+
+  <div class="mt-5">
+    <h4 class="fw-semibold mb-3" data-aos="fade-up">Similar pieces</h4>
+    <div class="row g-4">
+      
+        <div class="col-6 col-md-4" data-aos="fade-up">
+          <a href="art-monet.html" class="text-decoration-none text-dark">
+            <div class="card card-hover h-100">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Claude_Monet_-_Impression%2C_Sunrise_-_Google_Art_Project.jpg" class="card-img-top" alt="Impression, Sunrise">
+              <div class="card-body">
+                <h6 class="card-title mb-1">Impression, Sunrise</h6>
+                <small class="text-muted">Claude Monet</small>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-6 col-md-4" data-aos="fade-up">
+          <a href="art-van-gogh.html" class="text-decoration-none text-dark">
+            <div class="card card-hover h-100">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/The_Starry_Night.jpg" class="card-img-top" alt="The Starry Night">
+              <div class="card-body">
+                <h6 class="card-title mb-1">The Starry Night</h6>
+                <small class="text-muted">Vincent van Gogh</small>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="col-6 col-md-4" data-aos="fade-up">
+          <a href="art-picasso.html" class="text-decoration-none text-dark">
+            <div class="card card-hover h-100">
+              <img src="https://upload.wikimedia.org/wikipedia/en/7/74/PicassoGuernica.jpg" class="card-img-top" alt="Guernica">
+              <div class="card-body">
+                <h6 class="card-title mb-1">Guernica</h6>
+                <small class="text-muted">Pablo Picasso</small>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+    </div>
+  </div>
+</section>
+<footer class="bg-dark text-light py-4 mt-5">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+    <p class="mb-0">© <span id="year"></span> Artistry Gallery. All rights reserved.</p>
+    <div class="d-flex gap-3">
+      <a href="gallery.html" class="link-light text-decoration-none">Explore</a>
+      <a href="login.html" class="link-light text-decoration-none">Login</a>
+      <a href="signup.html" class="btn btn-outline-light btn-sm rounded-pill">Join</a>
+    </div>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</footer>
+<!-- Bootstrap JS (for components) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 700, once: true });
+</script>
+</body>
+</html>
